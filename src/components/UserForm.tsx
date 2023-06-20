@@ -20,7 +20,7 @@ const UserForm = ( {onSubmit}:Props ) => {
     const { register, handleSubmit, reset, formState: {errors} } = useForm <UserData> ( {resolver: zodResolver(schema)} );
     
   return (<>
-  <h1 className="display-6">Add a new contact.</h1>
+  <h1 className="display-6">Add a new user.</h1>
 
     <form onSubmit={handleSubmit(data => {
         onSubmit(data)
