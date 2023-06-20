@@ -34,6 +34,7 @@ const addUser = (newUser:User) => {
     <UserForm onSubmit={addUser} />
     </div>
 
+    <h1 className="display-6">List of users.</h1>
     {error && <p className="text-danger">{error}</p>}
     {isLoading && <div className="spinner-border"></div>}
     <table className="table table-bordered">
